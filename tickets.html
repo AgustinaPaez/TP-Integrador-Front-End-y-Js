@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-bg-dark" href="#">
+                    <img src="./img/codoacodo.png" alt="Logo" width="60" height="40"  class="d-inline-block align-text-top opacity-50">
+                    Conf Bs As
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav text-end ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white-50">La conferencia</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-white-50">Los oradores</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-white-50">El lugar y la fecha</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled text-light" aria-current="page" href="#">Conviertete en orador</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
+                          </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <br>
+
+<div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-2">
+            <div class="col">
+              <div class="card text-center border-primary">
+                <div class="card-body">
+                  <h5 class="card-title">Estudiante</h5>
+                  <p class="card-text">tienen un descuento</p>
+                  <h6 class="card-title">80%</h6>
+                  <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center border-success">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Trainee</h5>
+                  <p class="card-text">tienen un descuento</p>
+                  <h6 class="card-title">50%</h6>
+                  <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card text-center border-danger">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Junior</h5>
+                    <p class="card-text">tienen un descuento</p>
+                    <h6 class="card-title">15%</h6>
+                  <p class="card-text"><small class="text-muted">* presentar documentación</small></p>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+<br>
+<h6 style="text-align: center; font-weight: lighter;">VENTA</h6>
+<h2 style="text-align: center;"><a id="precioTicket">VALOR DE TICKET $200</a></h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <br>
+                <div class="">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                  </div>
+                  <div class="col">
+                    <label for="Cantidad" class="form-label">Cantidad</label>
+                    <input  id="Cantidad" type="number" class="form-control" placeholder="cantidad" aria-label="First name">
+                  </div>
+                  <div class="col">
+                    <label for="Categoria" class="form-label">Categoria</label>
+                  <select class="form-select" id="Categoria" aria-label="Default select example">
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <div>
+                <div id="totalPagar" class="alert alert-primary" role="alert">Total a Pagar: $ 
+                </div>
+            </div>
+              <br>
+              <div class="d-md-flex justify-content-center justify-content-between" >
+                <button id="Reset" type="reset" value="reset" class="btn" style="color:white; background-color: green; width: 48%;">Borrar</button>
+                <button id="Calcular" type="submit" value="calcular" class="btn"  style="color:white; background-color: green; width: 48%">Resumen</button>
+            </div>
+        </div>
+        
+
+        <br>
+          <nav class=" navbar navbar-bottom bg-dark">
+            <div class="container-fluid">
+              <span class="navbar-text text-light opacity-80">
+                preguntas
+                <br>
+                frecuentes
+              </span>
+              <span class="navbar-text text-light opacity-80">
+                titulo
+              </span> 
+              <span class="navbar-text text-light opacity-80">
+                titulo
+              </span>
+               <span class="navbar-text text-light opacity-80">
+                titulo
+              </span> 
+              <span class="navbar-text text-light opacity-80">
+                terminos y 
+                <br>
+                condiciones
+              </span> 
+              <span class="navbar-text text-light opacity-80">
+                titulo
+              </span> 
+              <span class="navbar-text text-light opacity-80">
+                titulo
+              </span>
+              
+            </div>
+          </nav>
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+       <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="script.js" type= "module" ></script>
+</body>
+</html>
